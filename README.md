@@ -1,20 +1,22 @@
 # ETD1
 # PROGRAMADORES: JOSE CABRERA - JUAN JARAMILLO
 
-public String metodo2( )
+    public String metodo2( )
     {
     	try {
+     
     		generarReporteDiscosCostosos();
     		return ("Reporte Generado Exitosamente!!");
     	}
     	catch(Exception e) {
     		return ("Error al generar el reporte, tipo: "+e);
-    	}
-    }
-public void generarReporteDiscosCostosos() throws FileNotFoundException{
+      }
+      
+      }
+      public void generarReporteDiscosCostosos() throws FileNotFoundException{
+
     	File miArchivo = new File("./data/discosCostosos");
     	PrintWriter pluma = new PrintWriter(miArchivo);
-    	
     	pluma.println("----Reporte de Canciones de alto Costo----");
     	pluma.println("--------------------------------");
     	
@@ -32,9 +34,7 @@ public void generarReporteDiscosCostosos() throws FileNotFoundException{
 			}
     		
     	}
-    	pluma.close();
-    	
-    }
+    	pluma.close(); }
 
 
     
