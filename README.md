@@ -1,4 +1,4 @@
-# ETD1
+# Estructuras de Datos 1
 # PROGRAMADORES: JOSE CABRERA - JUAN JARAMILLO
 
     public String metodo2( )
